@@ -209,17 +209,6 @@
             flex-shrink: 0;
         }
 
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -237,10 +226,6 @@
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 3rem;
-            }
-
             .glass-card {
                 padding: 25px;
             }
@@ -252,6 +237,11 @@
 
             .profile-photo {
                 margin: 0 auto;
+            }
+
+            .video-grid {
+                flex-direction: column;
+                align-items: center;
             }
 
             .video-card {
@@ -274,11 +264,6 @@
     </svg>
 
     <div class="container">
-        <header>
-            <h1>Владислав Козмеску</h1>
-            <p class="subtitle">Видеомонтажёр вертикального контента</p>
-        </header>
-
         <div class="glass-card">
             <div class="intro-section">
                 <img src="https://i.imgur.com/fzJfgmF.jpeg" alt="Владислав Козмеску" class="profile-photo">
